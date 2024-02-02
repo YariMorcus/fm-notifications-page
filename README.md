@@ -21,6 +21,7 @@ _Source: [Frontend Mentor challenge page](https://www.frontendmentor.io/challeng
     - [Links](#links)
   - [Project information](#project-information)
     - [User stories and features](#user-stories-and-features)
+    - [Flowchart](#flowchart)
   - [Author](#author)
 
 ## Overview
