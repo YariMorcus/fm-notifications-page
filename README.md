@@ -19,6 +19,8 @@ _Source: [Frontend Mentor challenge page](https://www.frontendmentor.io/challeng
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Links](#links)
+  - [Project information](#project-information)
+    - [User stories and features](#user-stories-and-features)
   - [Author](#author)
 
 ## Overview
@@ -40,8 +42,30 @@ The users should be able to:
 - Solution URL: [Open GitHub repository](https://github.com/YariMorcus/fm-notifications-page)
 
 [//]: # 'Insert following when online: - Live Site URL: [open Netlify / GitHub page][fill in link]'
-[//]: # '## Project information'
-[//]: # '### User stories and features'
+
+## Project information
+
+### User stories and features
+
+1. As a user, I want to be able to mark a single notification as read so I know which I read before.
+
+   **Features**
+
+   |     |                                                                                        |
+   | --- | -------------------------------------------------------------------------------------- |
+   | 1   | When user clicks on a notification, the unread state will be converted to a read state |
+   | 2   | A visual indication that clearly indicates the difference between those states         |
+   | 3   | A counter that reduces by one every time the user marks a notification as read         |
+
+2. As a user, I want to be able to mark all notifications as read so I won't have to go through them one by one.
+
+   **Features**
+
+   |     |                                                              |
+   | --- | ------------------------------------------------------------ |
+   | 1   | A button that converts all unread notifications to read      |
+   | 2   | A counter that reduces the number of unread messages to zero |
+
 [//]: # '1. As a user I want to generate a new piece of advice so I might be able to learn something from it'
 [//]: # '**Feature**: A button that generates a new piece of advice based on an API call'
 [//]: # 'Optional: ### Flowchart'
