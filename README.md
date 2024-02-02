@@ -66,10 +66,13 @@ The users should be able to:
    | 1   | A button that converts all unread notifications to read      |
    | 2   | A counter that reduces the number of unread messages to zero |
 
-[//]: # '1. As a user I want to generate a new piece of advice so I might be able to learn something from it'
-[//]: # '**Feature**: A button that generates a new piece of advice based on an API call'
-[//]: # 'Optional: ### Flowchart'
-[//]: # 'Optional: insert flowchart link below'
+### Flowchart
+
+**User story 1**
+![Flowchart user story 1](flowchart-user-story-1.jpeg)
+
+**User story 2**
+![Flowchart user story 2](flowchart-user-story-2.jpeg)
 
 ## Author
 
