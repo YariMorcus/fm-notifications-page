@@ -1,0 +1,21 @@
+$font-size-paragraph: 1.6rem; // 16px
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+    url('../fonts/PlusJakartaSans-Medium.woff') format('woff'),
+    url('../fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+    url('../fonts/PlusJakartaSans-ExtraBold.woff') format('woff'),
+    url('../fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
