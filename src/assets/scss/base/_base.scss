@@ -15,8 +15,9 @@ html {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   display: flex;
+  padding: 3rem 2rem;
+  min-height: 100vh;
   flex-direction: column;
   text-rendering: optimizeSpeed;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -53,7 +54,7 @@ img {
 }
 
 .footer {
-  padding: 0 1.28rem 1.28rem;
+  padding: 0 1.28rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.2rem;
   text-align: center;
