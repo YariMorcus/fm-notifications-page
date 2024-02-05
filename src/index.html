@@ -35,60 +35,76 @@
 <body>
 
     <article class="notifications">
-        <h1 class="notifications__title">Notifications <span class="notifications__unread-count">3</span></h1>
-        <button class="notifications__button">Mark all as read</button>
+        <header class="notifications__header">
+            <h1 class="notifications__title">Notifications <span class="notifications__unread-count">3</span></h1>
+            <button class="notifications__button">Mark all as read</button>
+        </header> <!-- .notifications__header -->
 
         <div class="notifications__inner-container">
             <article class="notification">
                 <img src="assets/img/avatar-mark-webber.webp" alt="avatar of mark webber" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Mark Webber</span> reacted to your recent post <a href="#" class="notification__link">My first tournament today!</a>
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-02-05T13:47:00">1m ago</time>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Mark Webber</span> reacted to your recent post <a href="#" class="notification__link">My first tournament today!</a>
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-02-05T13:47:00">1m ago</time>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
             <article class="notification">
                 <img src="assets/img/avatar-angela-gray.webp" alt="avatar of angela gray" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Angela Gray</span> followed you
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-02-05T13:47:00">5m ago</time>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Angela Gray</span> followed you
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-02-05T13:47:00">5m ago</time>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
             <article class="notification">
                 <img src="assets/img/avatar-jacob-thompson.webp" alt="avatar of jacob thompson" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Jacob Thompson</span> has joined your group <a href="#" class="notification__link">Chess Club</a>
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-02-04T13:47:00">1 day ago</time>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Jacob Thompson</span> has joined your group <a href="#" class="notification__link">Chess Club</a>
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-02-04T13:47:00">1 day ago</time>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
             <article class="notification">
                 <img src="assets/img/avatar-rizky-hasanuddin.webp" alt="avatar of rizky hasanuddin" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Rizky Hasanuddin</span> sent you a private message
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-02-01T13:47:00">5 days ago</time>
-                <blockquote class="notification__private-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</blockquote>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Rizky Hasanuddin</span> sent you a private message
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-02-01T13:47:00">5 days ago</time>
+                    <blockquote class="notification__private-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</blockquote>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
             <article class="notification">
                 <img src="assets/img/avatar-kimberly-smith.webp" alt="avatar of kimberly smith" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Kimberly Smith</span> commented on your picture
-                    <img src="assets/img/image-chess.webp" alt="" width="90" height="90" class="notification__comment-img">
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-01-29T13:47:00">1 week ago</time>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Kimberly Smith</span> commented on your picture
+                        <img src="assets/img/image-chess.webp" alt="" width="90" height="90" class="notification__comment-img">
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-01-29T13:47:00">1 week ago</time>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
             <article class="notification">
                 <img src="assets/img/avatar-nathan-peterson.webp" alt="avatar of nathan peterson" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Nathan Peterson</span> reacted to your recent post <a href="#" class="notification__link">5 end-game strategies to increase your win rate</a>
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-01-22T13:47:00">2 weeks ago</time>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Nathan Peterson</span> reacted to your recent post <a href="#" class="notification__link">5 end-game strategies to increase your win rate</a>
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-01-22T13:47:00">2 weeks ago</time>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
             <article class="notification">
                 <img src="assets/img/avatar-anna-kim.webp" alt="avatar of anna kim" width="90" height="90" class="notification__avatar">
-                <p class="notification__text">
-                    <span class="notification__name">Anna Kim</span> left the group <a href="#" class="notification__link">Chess Club</a>
-                </p> <!-- .notification__text -->
-                <time class="notification__time" datetime="2024-01-22T13:47:00">2 weeks ago</time>
+                <div class="notification__inner-content">
+                    <p class="notification__text">
+                        <span class="notification__name">Anna Kim</span> left the group <a href="#" class="notification__link">Chess Club</a>
+                    </p> <!-- .notification__text -->
+                    <time class="notification__time" datetime="2024-01-22T13:47:00">2 weeks ago</time>
+                </div> <!-- .notification__inner-content -->
             </article> <!-- .notification -->
         </div> <!-- .notifications__inner-container -->
     </article> <!-- .notifications -->
