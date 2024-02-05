@@ -1,0 +1,68 @@
+@use '../abstracts/variables' as v;
+
+.notification {
+  display: flex;
+  column-gap: 1.5rem;
+  padding: 2rem 2rem 0;
+
+  &--unread {
+    padding: 2rem;
+    background-color: v.$very-light-grayish-blue;
+
+    & .notification__text::after {
+      display: inline-block;
+      margin-left: 0.5rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: v.$red;
+      border-radius: 1rem;
+      content: '';
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__avatar {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__text {
+    margin-bottom: 0.3rem;
+    color: v.$dark-grayish-blue;
+  }
+
+  &__name {
+    font-weight: 800;
+    color: initial;
+  }
+
+  &__link {
+    font-weight: 800;
+    color: v.$blue;
+    text-decoration: none;
+
+    &:visited {
+      color: v.$dark-grayish-blue;
+    }
+  }
+
+  &__time {
+    color: v.$grayish-blue;
+  }
+
+  &__private-message {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    color: v.$dark-grayish-blue;
+    border: 1px solid v.$light-grayish-blue-2;
+    border-radius: 0.5rem;
+  }
+
+  &__comment-img {
+    margin-left: 2rem;
+    float: right;
+  }
+}
