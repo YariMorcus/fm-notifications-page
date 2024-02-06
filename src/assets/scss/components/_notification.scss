@@ -1,27 +1,18 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .notification {
   display: flex;
   column-gap: 1.5rem;
   padding: 2rem 2rem 0;
-
-  &--unread {
-    padding: 2rem;
-    background-color: v.$very-light-grayish-blue;
-
-    & .notification__text::after {
-      display: inline-block;
-      margin-left: 0.5rem;
-      width: 0.8rem;
-      height: 0.8rem;
-      background-color: v.$red;
-      border-radius: 1rem;
-      content: '';
-    }
-  }
+  border-radius: 1rem;
 
   &:not(:last-child) {
     margin-bottom: 2rem;
+  }
+
+  &__inner-content {
+    flex: 1;
   }
 
   &__avatar {
@@ -64,5 +55,24 @@
   &__comment-img {
     margin-left: 2rem;
     float: right;
+  }
+
+  &--unread {
+    padding: 2rem;
+    background-color: v.$very-light-grayish-blue;
+
+    & .notification__text::after {
+      display: inline-block;
+      margin-left: 0.5rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: v.$red;
+      border-radius: 1rem;
+      content: '';
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
 }

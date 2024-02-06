@@ -1,9 +1,11 @@
 @use '../abstracts/variables' as v;
 @use '../base/typography' as t;
+@use '../abstracts/mixins' as m;
 
 .notifications {
   margin-bottom: 6rem;
   font-size: 1.3rem;
+  background-color: v.$white;
 
   &__header {
     display: flex;
@@ -19,8 +21,9 @@
   &__unread-count {
     display: inline-block;
     margin-left: 0.5rem;
-    padding: 0 1.1rem;
+    padding: 0.2rem 1.2rem;
     color: v.$white;
+    font-size: 1.6rem;
     background: v.$blue;
     border-radius: 0.9rem;
   }
@@ -31,5 +34,12 @@
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  @include m.breakpoint-md() {
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 62rem;
+    border-radius: 2rem;
   }
 }
