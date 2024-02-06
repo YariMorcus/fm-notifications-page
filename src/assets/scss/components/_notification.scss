@@ -2,6 +2,7 @@
 @use '../abstracts/mixins' as m;
 
 .notification {
+  position: relative;
   display: flex;
   column-gap: 1.5rem;
   padding: 2rem 2rem 0;
@@ -78,6 +79,10 @@
     padding: 2rem;
     background-color: v.$very-light-grayish-blue;
 
+    & .notification__inner-content {
+      margin-right: 2rem;
+    }
+
     & .notification__text::after {
       display: inline-block;
       margin-left: 0.5rem;
@@ -91,5 +96,22 @@
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
+  }
+
+  // Progressive enhancement
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+  }
+
+  &__checkbox:checked,
+  &:has(&__checkbox:checked) &__text:after {
+    display: none;
+  }
+
+  &:has(&__checkbox:checked) {
+    background-color: v.$white;
   }
 }
