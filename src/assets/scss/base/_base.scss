@@ -63,14 +63,23 @@ img {
   font-size: 1.2rem;
   text-align: center;
 
-  // &__link {
-  //   &:hover {
-  //   }
+  &__link {
+    &:visited {
+      color: v.$footer-link-color-state-visited;
+    }
 
-  //   &:focus-visible {
-  //     border-radius: 1px;
-  //   }
-  // }
+    &:hover {
+      color: v.$footer-link-color-state-hover;
+    }
+
+    &:active {
+      color: v.$footer-link-color-state-active;
+    }
+
+    &:focus-visible {
+      border-radius: 1px;
+    }
+  }
 }
 
 // .noscript {
