@@ -1,3 +1,4 @@
+// TODO remove unused mixin sm
 // Mobile - 360px
 @mixin breakpoint-sm() {
   @media (min-width: 22.5rem) {
@@ -12,9 +13,9 @@
   }
 }
 
-// Landscape - orientation
+// Landscape - orientation and max-width 1032px
 @mixin orientation-landscape() {
-  @media (orientation: Landscape) {
+  @media (orientation: Landscape) and (max-width: 64.5rem) {
     @content;
   }
 }
