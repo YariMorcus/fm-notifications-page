@@ -61,6 +61,11 @@
     color: v.$white;
     background: v.$blue;
     border-radius: 0.9rem;
+
+    @include m.breakpoint-md() {
+      top: 3rem;
+      left: 16rem;
+    }
   }
 
   .js &__unread-count {
