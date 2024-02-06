@@ -64,7 +64,6 @@
   }
 
   &__comment-img {
-    margin-left: 2rem;
     float: right;
     border: 0.3rem solid transparent;
     cursor: pointer;
@@ -72,6 +71,10 @@
     &:hover {
       border: 0.3rem double v.$grayish-blue;
       border-radius: 0.9rem;
+    }
+
+    @include m.breakpoint-md() {
+      margin-left: 2rem;
     }
   }
 
