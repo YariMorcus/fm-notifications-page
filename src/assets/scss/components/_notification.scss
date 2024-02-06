@@ -81,10 +81,7 @@
   &--unread {
     padding: 2rem;
     background-color: v.$very-light-grayish-blue;
-
-    & .notification__inner-content {
-      margin-right: 2rem;
-    }
+    counter-increment: unreadcount;
 
     & .notification__text::after {
       display: inline-block;
@@ -116,5 +113,13 @@
 
   &:has(&__checkbox:checked) {
     background-color: v.$white;
+  }
+
+  .js &__checkbox {
+    display: none;
+  }
+
+  .js &--unread &__inner-content {
+    margin-right: 0;
   }
 }
