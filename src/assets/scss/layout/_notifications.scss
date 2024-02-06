@@ -34,6 +34,10 @@
     background: none;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      color: v.$blue;
+    }
   }
 
   @include m.breakpoint-md() {
@@ -41,5 +45,9 @@
     padding: 3rem;
     max-width: 62rem;
     border-radius: 2rem;
+  }
+
+  @include m.orientation-landscape() {
+    margin: 0 auto 6rem;
   }
 }

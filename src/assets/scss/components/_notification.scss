@@ -28,6 +28,11 @@
   &__name {
     font-weight: 800;
     color: initial;
+
+    &:hover {
+      color: v.$blue;
+      cursor: pointer;
+    }
   }
 
   &__link {
@@ -50,11 +55,23 @@
     color: v.$dark-grayish-blue;
     border: 1px solid v.$light-grayish-blue-2;
     border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: v.$light-grayish-blue-1;
+    }
   }
 
   &__comment-img {
     margin-left: 2rem;
     float: right;
+    border: 0.3rem solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: 0.3rem double v.$grayish-blue;
+      border-radius: 0.9rem;
+    }
   }
 
   &--unread {
