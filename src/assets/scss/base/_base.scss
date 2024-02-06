@@ -82,14 +82,15 @@ img {
   }
 }
 
-// .noscript {
-//   padding: 2rem 1rem;
-//   font-size: 2rem;
-//   color: v.$light-cyan;
-//   text-align: center;
-//   border-bottom: 1px solid;
+.noscript {
+  margin: 0 auto 5rem;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  text-align: center;
+  background: v.$yellow;
+  border-bottom: 1px solid;
 
-//   @include m.breakpoint-md() {
-//     padding: 2rem 0;
-//   }
-// }
+  @include m.breakpoint-md() {
+    padding: 2rem 10rem;
+  }
+}
