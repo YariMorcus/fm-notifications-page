@@ -44,6 +44,10 @@
     &:visited {
       color: v.$dark-grayish-blue;
     }
+
+    &:hover {
+      color: v.$blue;
+    }
   }
 
   &__time {
