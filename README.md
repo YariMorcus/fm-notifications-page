@@ -74,18 +74,18 @@ The users should be able to:
 
 #### Progressive enhancement
 
-When JS is not available, checkboxes [^1] will be shown to the right of the unread notifications.
+When JS is not available, checkboxes will be shown to the right of the unread notifications.
 When user presses the checkbox, the notification will be marked as read.
 
-_The unread counter does not work without JS. The user is notified in this case. [^2]_
+_The unread counter does not work without JS. The user is notified in this case._
 
-[^1]:
-    Checkboxes on the right
-    ![Checkboxes to the right](progressive-enhancement.png)
+<img src="progressive-enhancement.png" alt="checkboxes on the right" width="450">
 
-[^2]:
-    Warning for not functioning counter
-    ![Checkboxes to the right](progressive-enhancement-warning.png)
+_image 1: checkboxes on the right_
+
+<img src="progressive-enhancement-warning.png" alt="progressive enhancement warning" width="450">
+
+_image 2: warning for not functioning counter_
 
 ### Continued development
 
