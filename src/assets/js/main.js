@@ -10,14 +10,14 @@
 class App {
   #body = document.body;
 
-  #notificationsContainer = document.querySelector('.notifications');
+  #notificationsContainer = document.querySelector('.js-notifications');
 
   #unreadCountElem = this.#notificationsContainer.querySelector(
-    '.notifications__unread-count'
+    '.js-notifications__unread-count'
   );
 
   #readButton = this.#notificationsContainer.querySelector(
-    '.notifications__button'
+    '.js-notifications__button'
   );
 
   constructor() {
@@ -39,7 +39,7 @@ class App {
    */
   #addHandlerClickNotification() {
     this.#notificationsContainer.addEventListener('click', e => {
-      const notification = e.target.closest('.notification');
+      const notification = e.target.closest('.js-notification');
 
       if (!notification) return;
 
@@ -54,7 +54,7 @@ class App {
   #addHandlerClickReadButton() {
     this.#readButton.addEventListener('click', () => {
       const NOTIFICATIONS =
-        this.#notificationsContainer.querySelectorAll('.notification');
+        this.#notificationsContainer.querySelectorAll('.js-notification');
 
       NOTIFICATIONS.forEach(notification => {
         notification.classList.remove('notification--unread');
