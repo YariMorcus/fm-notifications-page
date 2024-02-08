@@ -6,11 +6,7 @@ Difficulty: `junior`
 
 [//]: # 'Insert screenshot below'
 
-![Preview of the challenge](preview.jpg)
-
-Preview of the challenge.
-
-_Source: [Frontend Mentor challenge page](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC)_
+![Screenshot of the challenge](screenshot.png)
 
 ## Table of contents
 
@@ -19,6 +15,12 @@ _Source: [Frontend Mentor challenge page](https://www.frontendmentor.io/challeng
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+      - [Progressive enhancement](#progressive-enhancement)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
   - [Project information](#project-information)
     - [User stories and features](#user-stories-and-features)
     - [Flowchart](#flowchart)
@@ -38,11 +40,79 @@ The users should be able to:
 
 ### Links
 
----
-
 - Solution URL: [Open GitHub repository](https://github.com/YariMorcus/fm-notifications-page)
+- Live Site URL: [open Netlify](https://notifications-page-yari-morcus.netlify.app)
 
-[//]: # 'Insert following when online: - Live Site URL: [open Netlify / GitHub page][fill in link]'
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS _(BEM naming convention used, [see getbem.com](http://getbem.com) for more information)_
+- Flexbox
+- ES6 classes
+- Mobile-first workflow
+- Progressive enhancement
+- Optimized for both Open Graph (Facebook) and Twitter Cards
+- [Node.js](https://nextjs.org/) - Open source and multiplatform JavaScript runtime environment
+- [NPM](https://www.npmjs.com/) - Package Manager for Node JavaScript platform
+- [Parcel](https://parceljs.org/) - Zero configuration build tool / module bundler to automate workflow
+- [Sass](https://sass-lang.com/) - CSS Preprocessor (in collaboration with Parcel)
+- [GitHub](https://github.com/) - Technological platform based on Git
+- [Git](https://git-scm.com/) - Free and open source distributed version control system
+- [Netlify](https://www.netlify.com/) - Free service to host static webpages and web applications
+
+### What I learned
+
+1. Always use semantic compliant-standard HTML
+2. To keep testing the application for Web Accessibility
+3. To apply progressive enhancement if needed
+4. To spend time looking at the details of the designs to create the application as accurately as possible
+5. How to write documentation for functions
+6. How to solve problems with a framework _(provided by a [course](https://www.udemy.com/course/the-complete-javascript-course/) I followed)_
+7. How to create a flowchart based on the given project information
+
+#### Progressive enhancement
+
+When JS is not available, checkboxes [^1] will be shown to the right of the unread notifications.
+When user presses the checkbox, the notification will be marked as read.
+
+_The unread counter does not work without JS. The user is notified in this case. [^2]_
+
+[^1]:
+    Checkboxes on the right
+    ![Checkboxes to the right](progressive-enhancement.png)
+
+[^2]:
+    Warning for not functioning counter
+    ![Checkboxes to the right](progressive-enhancement-warning.png)
+
+### Continued development
+
+The way I want to continue to develop myself is by focusing on laying out a proper foundation of HTML, CSS, and JavaScript.
+This so I can build quality websites for clients by just using the core languages of the Web.
+At the present, I am working on the above things by going through (interactive) articles on the MDN Web Docs (see chapter [Useful resources](#useful-resources)).
+
+Another way I want to improve my knowledge of these subjects is to do more challenges that [Frontend Mentor](https://www.frontendmentor.io/challenges) is offering, starting at the lowest level, and building that up to the more advanced ones.
+
+Besides the above, I want to continue to develop myself by using several tools more often to improve my workflow. and spend less time doing things that can be automated.
+
+A few tools that I will start using more often are:
+
+1. Gulp
+2. Parcel
+3. Git
+4. GitHub
+5. Netlify (in combination with Continues Deployment)
+
+_I will learn the above points in between but do not want to focus too much on those at the moment._
+
+As soon as I am capable of creating quality websites with the core languages of the Web, I will start to learn JavaScript libraries and frameworks. Both of these change over time, so I do not want to spend my time on those before I have a solid understanding of prior mentioned languages.
+
+### Useful resources
+
+- [Transfonter](https://transfonter.org) - Has been used to convert the downloaded font files to woff and woff2 (most recent font formats, supported in all major browsers), and generate the corresponding `@font-face` css rulesets
+- [Frontend Mentor - Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC)
 
 ## Project information
 
